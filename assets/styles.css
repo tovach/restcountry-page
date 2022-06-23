@@ -1,0 +1,119 @@
+:root {
+  --bg: #188fa7;
+  --primary: #e2dbbe;
+  --secondary: #769fb6;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  background: var(--bg);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+picture {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.vHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1060px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.main__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 465px;
+  margin: 0 auto;
+}
+.main__heading {
+  color: var(--primary);
+}
+.main__form {
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  padding: 15px;
+  padding-right: 80px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
+  background: rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: #fff;
+  font: inherit;
+  font-size: 20px;
+}
+.form__input:focus {
+  background: var(--secondary);
+  border: none;
+}
+.form__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  padding: 0 20px;
+  border-radius: 3px;
+  background: var(--primary);
+  cursor: pointer;
+}
