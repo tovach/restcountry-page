@@ -163,6 +163,7 @@ picture {
 }
 .country {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   width: 250px;
@@ -172,6 +173,7 @@ picture {
   border-radius: 5px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   color: var(--primary);
+  cursor: pointer;
 }
 
 .country__wrapper {
@@ -259,4 +261,51 @@ picture {
   width: 20px;
   height: 20px;
   background: url("img/people.svg");
+}
+
+.country__neighbors {
+}
+.neighbors {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background: var(--secondary);
+  border-radius: 5px;
+  z-index: 20;
+}
+
+.neighbors.active {
+  opacity: 1;
+}
+
+.neighbors__heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.neighbors__list {
+  display: flex;
+  gap: 3px 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.neighbors__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.neighbors__flag {
+  width: 40px;
+  height: 40px;
+}
+.neighbors__flag img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.neighbors__name {
 }
