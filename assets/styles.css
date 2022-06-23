@@ -67,7 +67,7 @@ picture {
 .main {
   display: flex;
   align-items: center;
-  min-height: 80vh;
+  padding-top: 40px;
 }
 
 .main__wrapper {
@@ -116,4 +116,105 @@ picture {
   border-radius: 3px;
   background: var(--primary);
   cursor: pointer;
+}
+
+.main__list {
+}
+.list {
+}
+.list__item {
+}
+.country {
+  width: 200px;
+  padding-bottom: 10px;
+  background: var(--secondary);
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  color: var(--primary);
+}
+
+.country__wrapper {
+}
+.country__flag {
+}
+.country__flag img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.country__info {
+  padding-left: 40px;
+}
+
+.country__name {
+  position: relative;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.country__name::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 8px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("img/location.svg");
+}
+.country__capital {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.country__capital::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("img/capital.svg");
+}
+
+.country__currency {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.country__currency::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 2px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("img/currency.svg");
+}
+.currency {
+}
+.currency__symbol {
+}
+.currency__name {
+}
+
+.country__population {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.country__population::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 1px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("img/people.svg");
 }
