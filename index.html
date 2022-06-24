@@ -14,13 +14,14 @@
 </head>
 
 <body>
+
   <main class="main">
     <div class="container">
       <div class="main__wrapper">
         <div class="main__top top">
           <h1 class="top__heading">Get information about countries</h1>
           <form class="top__form form">
-            <input name="country-name" class="form__input" type="text" placeholder="Your country" required>
+            <input name="country-name" class="form__input" type="text" placeholder="Country full name" required>
             <button class="form__button" type="submit">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -32,12 +33,16 @@
           <button class="top__clear-list">Clear list</button>
         </div>
 
-        <ul class="main__list list">
-        </ul>
+        <ul class="main__list list"></ul>
       </div>
     </div>
   </main>
 
+  <div class="pop-up">
+    <div class="pop-up__wrapper">
+      <h5 class="pop-up__heading"></h5>
+    </div>
+  </div>
   <script src="assets/app.js"></script>
 </body>
 
